@@ -34,7 +34,7 @@
 %define priority        1600
 %define javaver         1.6.0
 %define cvsver          6
-%define buildver        43
+%define buildver        45
 
 # TODO: Think about using conditionals for version variants.
 %define cvsversion	%{cvsver}u%{buildver}
@@ -810,6 +810,9 @@ fi
 %ghost %{fontdir}/encodings.dir
 
 %changelog
+* Tue Jul 30 2013 Jason Corley <jason.corley@gmail.com> 0:1.6.0.45
+- 1.6.0.45
+
 * Mon Jan 28 2013 Jason Corley <jason.corley@gmail.com> 0:1.6.0.43
 - 1.6.0.43
 - update copyright to include 2013

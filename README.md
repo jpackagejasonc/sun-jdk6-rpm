@@ -14,12 +14,12 @@ broken.
 
 I have tested this build on a CentOS5.x86_64 system with mock from EPEL:
 
-<download the sources from Oracle>
-mock -r epel-5-x86_64 --init
-<copy stuff into mock chroot, set perms appropriately>
-mock -r epel-5-x86_64 --shell
-  cd /builddir/build/SPECS
-  rpmbuild -bs --nodeps java-1.6.0-sun.spec
-<copy out srpm>
-mock -r epel-5-x86_64 <srpm>
+* download the sources from Oracle
+* `mock -r epel-5-x86_64 --init`
+* copy stuff into mock chroot, set perms appropriately
+* `mock -r epel-5-x86_64 --shell`
+  * `cd /builddir/build/SPECS`
+  * `rpmbuild -bs --nodeps java-1.6.0-sun.spec`
+* copy out srpm
+* `mock -r epel-5-x86_64 <srpm>`
 
